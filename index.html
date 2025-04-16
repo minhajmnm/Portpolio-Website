@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio of Mohamed, Frontend Developer">
+  <title>Mohamed | Frontend Developer Portfolio</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#32056b',
+            primaryHover: '#6967eb',
+            lightBg: '#f0f8ff',
+            darkBg: '#212529',
+          },
+          fontFamily: {
+            ubuntu: ['Ubuntu', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-poppins text-gray-800 overflow-x-hidden">
+  
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed w-full py-6 bg-white bg-opacity-95 shadow-md transition-all duration-300 z-50">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <div class="logo">
+        <a href="#" class="font-ubuntu font-medium text-4xl text-primary transition-colors duration-300">MNM Solutions</a>
+      </div>
+      <ul class="menu hidden md:flex relative">
+        <li class="mx-4"><a href="#home" class="text-lg font-medium relative py-2 hover:text-primary transition-colors duration-300 after:absolute after:w-0 after:h-0.5 after:bg-primary after:bottom-0 after:left-0 after:transition-all after:duration-300 hover:after:w-full">Home</a></li>
+        <li class="mx-4"><a href="#about" class="text-lg font-medium relative py-2 hover:text-primary transition-colors duration-300 after:absolute after:w-0 after:h-0.5 after:bg-primary after:bottom-0 after:left-0 after:transition-all after:duration-300 hover:after:w-full">About</a></li>
+        <li class="mx-4"><a href="#skills" class="text-lg font-medium relative py-2 hover:text-primary transition-colors duration-300 after:absolute after:w-0 after:h-0.5 after:bg-primary after:bottom-0 after:left-0 after:transition-all after:duration-300 hover:after:w-full">Skills</a></li>
+        <li class="mx-4"><a href="#services" class="text-lg font-medium relative py-2 hover:text-primary transition-colors duration-300 after:absolute after:w-0 after:h-0.5 after:bg-primary after:bottom-0 after:left-0 after:transition-all after:duration-300 hover:after:w-full">Services</a></li>
+        <li class="mx-4"><a href="#contact" class="text-lg font-medium relative py-2 hover:text-primary transition-colors duration-300 after:absolute after:w-0 after:h-0.5 after:bg-primary after:bottom-0 after:left-0 after:transition-all after:duration-300 hover:after:w-full">Contact</a></li>
+        <li class="cancel-btn absolute top-8 right-8 text-white text-2xl cursor-pointer hidden"><i class="fas fa-times"></i></li>
+      </ul>
+      <div class="media-icons hidden md:flex">
+        <a href="https://www.facebook.com/share/16FsLaaY8o/" aria-label="Facebook" class="mx-2 text-lg text-primary hover:transform hover:-translate-y-1 transition-transform duration-300"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter" class="mx-2 text-lg text-primary hover:transform hover:-translate-y-1 transition-transform duration-300"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/mohamed-minhaj-7b6150301" aria-label="LinkedIn" class="mx-2 text-lg text-primary hover:transform hover:-translate-y-1 transition-transform duration-300"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="menu-btn md:hidden text-primary text-2xl cursor-pointer">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="min-h-screen bg-lightBg bg-fixed bg-center bg-cover flex items-center">
+    <div class="container mx-auto px-4 h-full flex flex-col justify-center py-24">
+      <div class="text-xl md:text-2xl mb-2">Hello, I'm</div>
+      <div class="text-5xl md:text-7xl font-semibold mb-2 leading-tight">Mohamed Minhaj</div>
+      <div class="text-3xl md:text-4xl my-4 text-primary font-ubuntu">Frontend Web Developer</div>
+      <div class="text-xl md:text-2xl my-4 max-w-lg">Crafting clean and elegant interfaces</div>
+      <div class="mt-8">
+        <button class="bg-primary hover:bg-white text-white hover:text-primary border-2 border-transparent hover:border-primary px-6 py-3 rounded-md text-lg font-medium transition duration-300 transform hover:-translate-y-1">Hire Me</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-center mb-16">
+        <h2 class="text-3xl font-semibold relative pb-2 after:content-[''] after:absolute after:h-0.5 after:w-full after:bg-primary after:left-0 after:bottom-0 before:content-[''] before:absolute before:h-0.5 before:w-3/4 before:bg-primary before:left-1/2 before:-translate-x-1/2 before:-bottom-2">About Me</h2>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+        <div class="w-full md:w-2/5">
+          <img src="image.JPG" alt="Mohamed Minhaj - Frontend Developer" loading="lazy" class="w-full max-w-md mx-auto rounded-xl shadow-lg" />
+        </div>
+        <div class="w-full md:w-3/5">
+          <div class="text-2xl font-medium mb-4">Passionate Developer</div>
+          <p class="text-base mb-3">I specialize in creating responsive, high-performance websites using modern technologies. My goal is to make your vision come alive on the web with intuitive, user-friendly interfaces that deliver exceptional user experiences.</p>
+          <div>
+            <a href="CV.pdf">
+              <button class="bg-primary hover:bg-white text-white hover:text-primary border-2 border-transparent hover:border-primary px-6 py-3 rounded-md text-lg font-medium transition duration-300 transform hover:-translate-y-1 flex items-center gap-2">
+                <i class="fas fa-download"></i> Download CV
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-lightBg">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-center mb-16">
+        <h2 class="text-3xl font-semibold relative pb-2 after:content-[''] after:absolute after:h-0.5 after:w-full after:bg-primary after:left-0 after:bottom-0 before:content-[''] before:absolute before:h-0.5 before:w-3/4 before:bg-primary before:left-1/2 before:-translate-x-1/2 before:-bottom-2">My Skills</h2>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+        <div class="w-full md:w-1/2">
+          <div class="text-2xl font-medium mb-4">Technical Expertise</div>
+          <p class="text-base mb-8">I bring a deep understanding of HTML, CSS, JavaScript, and modern frameworks like React. I'm committed to writing clean, maintainable code and continuously learning new technologies to stay at the forefront of web development.</p>
+          <div class="flex items-center ml-4">
+            <div class="text-6xl md:text-8xl font-semibold leading-none">2+</div>
+            <div class="text-lg md:text-xl font-medium ml-2">Years of<br>Experience</div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="p-6 bg-white rounded-lg shadow-md transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+            <div class="text-xl text-primary font-medium mb-2">HTML5</div>
+            <div class="text-5xl text-primary font-semibold">95%</div>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow-md transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+            <div class="text-xl text-primary font-medium mb-2">CSS3/SASS</div>
+            <div class="text-5xl text-primary font-semibold">90%</div>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow-md transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+            <div class="text-xl text-primary font-medium mb-2">JavaScript</div>
+            <div class="text-5xl text-primary font-semibold">85%</div>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow-md transition duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+            <div class="text-xl text-primary font-medium mb-2">Wordpress</div>
+            <div class="text-5xl text-primary font-semibold">80%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-center mb-16">
+        <h2 class="text-3xl font-semibold relative pb-2 after:content-[''] after:absolute after:h-0.5 after:w-full after:bg-primary after:left-0 after:bottom-0 before:content-[''] before:absolute before:h-0.5 before:w-3/4 before:bg-primary before:left-1/2 before:-translate-x-1/2 before:-bottom-2">My Services</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="p-8 bg-white rounded-xl shadow-md text-center transition duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:bg-primary group">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-6 transition-colors duration-300 group-hover:bg-white group-hover:text-primary">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="text-2xl font-semibold mb-4 transition-colors duration-300 group-hover:text-white">Web Development</div>
+          <p class="text-base transition-colors duration-300 group-hover:text-white">Modern, responsive websites built with performance and accessibility in mind, using the latest web technologies.</p>
+        </div>
+        <div class="p-8 bg-white rounded-xl shadow-md text-center transition duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:bg-primary group">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-6 transition-colors duration-300 group-hover:bg-white group-hover:text-primary">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <div class="text-2xl font-semibold mb-4 transition-colors duration-300 group-hover:text-white">UI/UX Design</div>
+          <p class="text-base transition-colors duration-300 group-hover:text-white">Clean, intuitive interfaces designed to enhance user experience and drive engagement.</p>
+        </div>
+        <div class="p-8 bg-white rounded-xl shadow-md text-center transition duration-300 transform hover:-translate-y-2 hover:shadow-xl hover:bg-primary group">
+          <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-6 transition-colors duration-300 group-hover:bg-white group-hover:text-primary">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div class="text-2xl font-semibold mb-4 transition-colors duration-300 group-hover:text-white">Responsive Design</div>
+          <p class="text-base transition-colors duration-300 group-hover:text-white">Seamless performance across all devices and screen sizes with mobile-first approach.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-lightBg">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-center mb-16">
+        <h2 class="text-3xl font-semibold relative pb-2 after:content-[''] after:absolute after:h-0.5 after:w-full after:bg-primary after:left-0 after:bottom-0 before:content-[''] before:absolute before:h-0.5 before:w-3/4 before:bg-primary before:left-1/2 before:-translate-x-1/2 before:-bottom-2">Get In Touch</h2>
+      </div>
+      <div class="max-w-2xl mx-auto text-center mb-10">
+        <p class="text-lg">Got a project in mind or just want to say hi? I'm open to freelance work and collaborations. Let's create something amazing together!</p>
+      </div>
+      <div class="text-center">
+       <button><a href="mailto:minhajmnm862@gmail.com" class="bg-primary hover:bg-white text-white hover:text-primary border-2 border-transparent hover:border-primary px-6 py-3 rounded-md text-lg font-medium transition duration-300 transform hover:-translate-y-1 flex items-center gap-2 mx-auto">
+          <i class="fas fa-envelope"></i> Email Me
+        </a> </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-primary">
+    <div class="container mx-auto px-4 text-center">
+      <div class="text-white text-lg">
+        © <span id="year"></span> <a href="#" class="font-medium hover:underline">     MNM MINHAJ    </a>           All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Button -->
+  <div class="scroll-button hidden fixed bottom-6 right-6 z-50 animate-fadeIn">
+    <a href="#home" aria-label="Scroll to top" class="bg-primary hover:bg-primaryHover text-white p-4 rounded-full shadow-md transition duration-300 transform hover:-translate-y-1 flex items-center justify-center">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Mobile menu functionality
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    const navbar = document.querySelector("#navbar");
+    const menu = document.querySelector(".menu");
+    const scrollBtn = document.querySelector(".scroll-button");
+    
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add("active", "flex", "flex-col", "fixed", "top-0", "right-0", "w-full", "max-w-sm", "h-screen", "bg-darkBg", "z-50", "items-center", "justify-center");
+      menu.classList.remove("hidden");
+      menuBtn.style.display = "none";
+      cancelBtn.style.display = "block";
+      document.body.style.overflow = "hidden";
+    });
+    
+    cancelBtn.addEventListener("click", () => {
+      menu.classList.remove("active", "flex", "flex-col", "fixed");
+      menu.classList.add("hidden", "md:flex");
+      menuBtn.style.display = "block";
+      cancelBtn.style.display = "none";
+      document.body.style.overflow = "auto";
+    });
+    
+    document.querySelectorAll(".menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth < 768) {
+          menu.classList.remove("active", "flex", "flex-col", "fixed");
+          menu.classList.add("hidden", "md:flex");
+          menuBtn.style.display = "block";
+          cancelBtn.style.display = "none";
+          document.body.style.overflow = "auto";
+        }
+      });
+    });
+    
+    // Scroll functionality
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add("bg-primary", "py-4");
+        navbar.classList.remove("bg-white", "bg-opacity-95", "py-6");
+        
+        // Change text color to white when navbar is sticky
+        document.querySelectorAll(".menu a").forEach(item => {
+          item.classList.add("text-white", "hover:text-white");
+          item.classList.remove("hover:text-primary");
+        });
+        
+        document.querySelector(".logo a").classList.add("text-white");
+        document.querySelector(".logo a").classList.remove("text-primary");
+        
+        document.querySelectorAll(".media-icons a").forEach(icon => {
+          icon.classList.add("text-white");
+          icon.classList.remove("text-primary");
+        });
+        
+        if (menuBtn.style.display !== "none") {
+          menuBtn.classList.add("text-white");
+          menuBtn.classList.remove("text-primary");
+        }
+      } else {
+        navbar.classList.remove("bg-primary", "py-4");
+        navbar.classList.add("bg-white", "bg-opacity-95", "py-6");
+        
+        // Change text color back when navbar is not sticky
+        document.querySelectorAll(".menu a").forEach(item => {
+          item.classList.remove("text-white", "hover:text-white");
+          item.classList.add("hover:text-primary");
+        });
+        
+        document.querySelector(".logo a").classList.remove("text-white");
+        document.querySelector(".logo a").classList.add("text-primary");
+        
+        document.querySelectorAll(".media-icons a").forEach(icon => {
+          icon.classList.remove("text-white");
+          icon.classList.add("text-primary");
+        });
+        
+        if (menuBtn.style.display !== "none") {
+          menuBtn.classList.remove("text-white");
+          menuBtn.classList.add("text-primary");
+        }
+      }
+      
+      // Show/hide scroll button
+      if (window.scrollY > 200) {
+        scrollBtn.classList.remove("hidden");
+      } else {
+        scrollBtn.classList.add("hidden");
+      }
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href");
+        if (targetId === "#") return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: "smooth"
+          });
+        }
+      });
+    });
+    
+    // Animate elements on scroll
+    const animateOnScroll = () => {
+      const elements = document.querySelectorAll("#skills .grid > div, #services .grid > div, #about > div > div");
+      
+      elements.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+        
+        if (elementPosition < screenPosition) {
+          element.classList.add("opacity-100", "translate-y-0");
+          element.classList.remove("opacity-0", "translate-y-4");
+        }
+      });
+    };
+    
+    // Set initial state for animation
+    document.querySelectorAll("#skills .grid > div, #services .grid > div, #about > div > div").forEach(el => {
+      el.classList.add("opacity-0", "translate-y-4", "transition-all", "duration-700");
+    });
+    
+    // Add animation on scroll and page load
+    window.addEventListener("scroll", animateOnScroll);
+    window.addEventListener("load", animateOnScroll);
+
+    // Add custom styles for animation
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.3s ease;
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>
